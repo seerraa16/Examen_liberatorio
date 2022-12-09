@@ -1,5 +1,5 @@
-sucesion = input("Ingrese: (S) límite máximo, (N) número de \
-términos? ")
+sucesion = input("Ingrese (S) para límite máximo de la sucesión \
+[por omisión número de términos]? ")
 
 if sucesion == 'S':
     def fib(n):
@@ -8,14 +8,11 @@ if sucesion == 'S':
             print(a, end=' ')
             a, b = b, a + b
     m = int(input("Límite máximo~> "))   
-    fib(m)
-
-elif sucesion == 'N':
-    a, b = 0,1
-    n = int(input("Número de términos~> "))
-    for i in range(n):
-        print(i, a)
-        a, b = b, a + b
+    fib(1000000)
 
 else:
-    print("Debe ingresar S o N")
+    n = int(input("Número de términos~> "))
+    a, b = 0,1
+    for i in range(n):
+        print(a, end=' ')
+        a, b = b, a + b

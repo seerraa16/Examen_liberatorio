@@ -1,4 +1,4 @@
-
+import simpy
 from sympy import expand, symbols #uso simpy para que el codigo sea mas legible ya que es un algoritmo matematico
   
 x, a, b, n = symbols('x a b n')
